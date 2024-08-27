@@ -24,7 +24,7 @@ spec:
         env:
         - name: TITLE
           value: "APACHE APP2"
-          #value: "MOVIES APP"
+          #value: "TRAIN APP"
 ---
 apiVersion: v1
 kind: Service
