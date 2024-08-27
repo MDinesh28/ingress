@@ -16,19 +16,25 @@ spec:
         backend:
           service:
             name: nginx
+            #name: movies
             port:
               number: 80
+              #number: 80
       - path: /httpd(/|$)(.*)
         pathType: Prefix
         backend:
           service:
             name: httpd
+            #name: train
             port:
               number: 80
+              #number: 80
       - path: /(.*)
         pathType: Prefix
         backend:
           service:
             name: nginx
+            #name: movies
             port:
               number: 80
+              #number: 80
