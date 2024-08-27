@@ -12,6 +12,7 @@ spec:
   - http:
       paths:
       - path: /nginx(/|$)(.*)
+     #- path: /movies(/|$)(.*)
         pathType: Prefix
         backend:
           service:
@@ -21,6 +22,7 @@ spec:
               number: 80
               #number: 80
       - path: /httpd(/|$)(.*)
+     #- path: /train(/|$)(.*)
         pathType: Prefix
         backend:
           service:
