@@ -18,13 +18,13 @@ spec:
       containers:
       - name: cont-1
         image: nginx
-        #image: mdinesh28/train:latest
+        #image: mdinesh28/movies:latest
         ports:
         - containerPort: 80
         env:
         - name: TITLE
           value: "NGINX APP1"
-          #value: "TRAIN APP"
+          #value: "MOVIES APP"
 ---
 apiVersion: v1
 kind: Service
